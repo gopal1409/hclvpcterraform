@@ -1,9 +1,9 @@
 #terraform aws load balancer
-module "ec2_private"{
+module "ec2_private" {
     depends_on = [
       module.vpc #very important else userdata 
     ]
-    source = "terraform-aws-modules/ec2/aws"
+    source = "terraform-aws-modules/ec2-instance/aws"
     version = "2.17.0"
     #insert 10 varaible
     name = "${var.environment}-vm"
