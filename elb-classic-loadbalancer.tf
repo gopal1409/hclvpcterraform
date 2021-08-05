@@ -7,7 +7,7 @@ module "elb"{
         module.vpc.public_subnets[0],
         module.vpc.public_subnets[1]
     ]
-    security_group = [module.loadbalancer-sg.this_security_group_id]
+    security_groups = [module.loadbalancer-sg.this_security_group_id]
     listener = [
         {
             instance_port = 80
@@ -31,9 +31,9 @@ module "elb"{
 
     }
     #ELB attachement
-    number_of_instance = var.private_instance_count
-    instances = [
-        module.ec2_private.id[0],
-        module.ec2_private.id[1]
-    ]
+    #number_of_instance = var.private_instance_count
+    #instances = [
+    #    module.ec2_private.id[0],
+     #   module.ec2_private.id[1]
+    #]
 }
