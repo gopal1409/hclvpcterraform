@@ -51,7 +51,7 @@ variable "vpc_single_nat_gateway" {
 }
 variable "instance_type" {
   type = string
-  value = "t2.micro"
+  default = "t2.micro"
   
 }
 
