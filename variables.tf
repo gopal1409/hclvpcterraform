@@ -6,7 +6,7 @@ variable "aws_region" {
 #environment variable
 variable "environment" {
   type = string
-  default = "dev"
+  default = "gopal"
   
 }
 
@@ -14,4 +14,8 @@ variable "business_devision" {
   description = "Business division"
   type = string
   default = "HR"
+}
+variable "private_instance_count" {
+  type = number
+  default = 1
 }
