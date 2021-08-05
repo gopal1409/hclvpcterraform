@@ -10,7 +10,7 @@ module "vpc" {
   public_subnets  = var.vpc_public_subnet
 
   #VPC DNS Parameters
-  enable_dns_hostname = true
+  enable_dns_hostnames = true
   enable_dns_support = true
 
   tags = {
