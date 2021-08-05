@@ -9,7 +9,7 @@ module "vpc" {
   private_subnets = var.vpc_private_subnet
   public_subnets  = var.vpc_public_subnet
 #database subnet
-database_subnet = var.vpc_database_subnet
+database_subnets = var.vpc_database_subnet
 create_database_subnet_group = var.vpc_create_database_subnet_group
 create_database_subnet_route_table = var.vpc_create_database_subnet_route_table
 #deploy intennet gw
