@@ -10,7 +10,7 @@ module "alb" {
     module.vpc.public_subnets[0],
     module.vpc.public_subnets[1]
   ]
-  security_groups = [module.loadbalancer_sg.this_security_group_id]
+  security_groups = [module.loadbalancer-sg.this_security_group_id]
   # Listeners
   # HTTP Listener - HTTP to HTTPS Redirect
     http_tcp_listeners = [
