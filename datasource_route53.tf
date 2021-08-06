@@ -1,3 +1,3 @@
-data "aws_route_53_zone" "domain"{
+data "aws_route53_zone" "domain"{
     name = "devopsincloud.com"
 }
