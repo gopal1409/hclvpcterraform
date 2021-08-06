@@ -17,5 +17,5 @@ variable "business_devision" {
 }
 variable "private_instance_count" {
   type = number
-  default = 1
+  default = 2
 }
